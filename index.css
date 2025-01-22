@@ -38,6 +38,10 @@
     margin: 0 auto;
 }
 
+.logo:hover {
+    opacity: 1;
+}
+
 .header__search {
     display: flex;
     justify-content: space-between;
@@ -69,6 +73,12 @@
     border: none;
     border-radius: 100px;
     cursor: pointer;
+}
+
+.header__search>button:hover,
+.header__basket:hover {
+    opacity: 0.9;
+    transition: all ease .4s;
 }
 
 .header__search>button>svg>path {
@@ -130,7 +140,7 @@
     gap: 12px;
     width: 138px;
     height: 39px;
-    background-color: black;
+    background-color: var(--primary-color);
     border-radius: 100px;
     position: relative;
 }
