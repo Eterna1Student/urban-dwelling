@@ -1,0 +1,73 @@
+@font-face {
+    font-family: 'Lato-Bold';
+    src: url('../fonts/Lato-Bold.woff2') format('woff2'),
+         url('../fonts/Lato-Bold.woff') format('woff'); 
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato-SemiBold';
+    src: url('../fonts/Lato-SemiBold.woff2') format('woff2'),
+         url('../fonts/Lato-SemiBold.woff') format('woff');
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Lato-Regular'; 
+    src: url('../fonts/Lato-Regular.woff2') format('woff2'), 
+         url('../fonts/Lato-Regular.woff') format('woff'); 
+    font-style: normal; 
+}
+
+@font-face {
+    font-family: 'Lato-Medium'; 
+    src: url('../fonts/Lato-Medium.woff2') format('woff2'), 
+         url('../fonts/Lato-Medium.woff') format('woff'); 
+    font-weight: normal; 
+    font-style: normal; 
+}
+
+@font-face {
+    font-family: 'Roboto-Regular'; 
+    src: url('../fonts/Roboto-Regular.woff2') format('woff2'), 
+         url('../fonts/Roboto-Regular.woff') format('woff'); 
+    font-weight: normal; 
+    font-style: normal; 
+}
+
+@font-face {
+    font-family: 'Korataki-Regular'; 
+    src: url('../fonts/Korataki.woff2') format('woff2'), 
+         url('../fonts/Korataki.woff') format('woff'); 
+    font-weight: normal; 
+    font-style: normal; 
+}
+
+@font-face {
+    font-family: 'Inter-Regular'; 
+    src: url('../fonts/Inter-Regular.woff2') format('woff2'), 
+         url('../fonts/Inter-Regular.woff') format('woff'); 
+    font-weight: normal; 
+    font-style: normal; 
+}
+
+:root {
+    --primary-color: #231815;
+    --secondary-color: #E45302;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1400px;
+    padding: 0 44px;
+}
+
+h2 {
+    font-family: 'Korataki-Regular';
+    font-size: 44px;
+    line-height: 1.4;
+    letter-spacing: 3px;
+    color: var(--primary-color);
+}
+
+
