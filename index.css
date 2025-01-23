@@ -508,6 +508,14 @@ footer {
 
 @media (max-width: 550px) {
 
+    .header__bottom>.logo {
+        margin-right: 20px;
+    }
+
+    .header__bottom {
+        flex-wrap: nowrap;
+    }
+
     .container {
         padding: 0 35px;
     }
