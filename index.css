@@ -38,6 +38,10 @@
     margin: 0 auto;
 }
 
+.header__bottom>.logo {
+    margin-right: 68px;
+}
+
 .logo:hover {
     opacity: 1;
 }
@@ -167,7 +171,7 @@
     font-size: 12px;
 }
 
-.header__burger {
+.header__burger-btn {
     display: none;
     border: none;
     background: none;
@@ -392,19 +396,22 @@ footer {
     grid-area: payments;
 }
 
-
 @media (max-width: 1200px) {
 
-    .header__nav,
-    .header__nav-list,
-    .header__search,
-    .header__basket {
-        display: none;
+    .header__nav {
+        margin-top: 15px;
+        order: 5;
     }
 
-    .header__burger {
-        display: block;
-        margin-left: auto;
+    .header__bottom>.logo {
+        flex-grow: 1;
+    }
+
+    .header__bottom {
+        flex-wrap: wrap;
+    }
+    .header__nav {
+        width: 100%;
     }
 
     .main__list-cards {
@@ -419,19 +426,6 @@ footer {
     'copyrights contacts services '
     'public payments payments';
     }
-
-    /* .footer {
-        grid-template-columns: auto auto 150px;
-        grid-template-rows: 4fr;
-        column-gap: 3%;
-        row-gap: 30px;
-        grid-template-areas:
-            'logo logo logo'
-            'address contacts services'
-            'public public services'
-            'payments copyrights copyrights';
-        padding: 60px 0;
-    } */
 
     .footer__public {
         justify-content: center;
@@ -456,29 +450,18 @@ footer {
         display: none;
     }
 
-    .main__title {
-        font-size: 32px;
+    .header__nav,
+    .header__nav-list,
+    .header__search,
+    .header__basket {
+        display: none;
     }
 
-    .main__list-cards {
-        grid-template-columns: 1fr 1fr;
+    .header__burger-btn {
+        display: block;
+        margin-left: auto;
     }
 
-    .footer {
-        grid-template-columns: auto auto 150px;
-        grid-template-rows: 4fr;
-        column-gap: 3%;
-        row-gap: 30px;
-        grid-template-areas:
-            'logo logo logo'
-            'address contacts services'
-            'public public services'
-            'payments copyrights copyrights';
-        padding: 60px 0;
-    }
-}
-
-@media (max-width: 780px) {
     .main__title {
         font-size: 24px;
     }
@@ -517,6 +500,10 @@ footer {
 }
 
 @media (max-width: 550px) {
+
+    .container {
+        padding: 0 35px;
+    }
 
     .main__list-cards {
         column-gap: 10px;
