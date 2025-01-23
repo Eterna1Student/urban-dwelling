@@ -196,6 +196,8 @@
 }
 
 .main__card {
+    display: flex;
+    flex-direction: column;
     position: relative;
 }
 
@@ -212,6 +214,7 @@
     margin: 20px 0 12px;
     font-family: 'Lato-Bold';
     font-size: 18px;
+    flex-grow: 5;
 }
 
 .main__card-price {
@@ -464,6 +467,10 @@ footer {
 
     .main__title {
         font-size: 24px;
+    }
+
+    .main__list-cards {
+        grid-template-columns: 1fr 1fr;
     }
 
     .footer {
